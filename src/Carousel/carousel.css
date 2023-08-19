@@ -1,0 +1,75 @@
+.react-multi-carousel-item {
+    /* max-width: 260px !important; */
+    width: 520px !important;
+    display: flex;
+    align-items: center !important;
+    justify-content: center !important;
+    margin: 0 12px;
+}
+
+.react-multi-carousel-track {
+    margin-bottom: 20px;
+}
+
+.banner-carousel .react-multi-carousel-track {
+    margin-bottom: 0;
+}
+
+.react-multiple-carousel__arrow {
+    /* background-color: white !important; */
+    z-index: 5 !important;
+    border: 2px solid rgba(128, 128, 128, 0.504) !important;
+    box-shadow: 0 0 8px rgba(128, 128, 128, 0.563);
+}
+
+.react-multiple-carousel__arrow:hover {
+    background-color: whitesmoke !important;
+}
+
+.react-multiple-carousel__arrow::before {
+    color: black !important;
+}
+
+.react-multiple-carousel__arrow--right {
+    right: -10px !important;
+}
+
+.react-multiple-carousel__arrow--left {
+    left: -50px !important;
+}
+
+.react-multi-carousel-list {
+    position: static !important;
+}
+
+.react-multi-carousel-track {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+.banner-carousel {
+    border: 2px solid red;
+    display: flex;
+    /* margin: 1vmax auto; */
+    align-items: center;
+    /* width: 90vw; */
+    flex-wrap: wrap;
+    max-width: 100%;
+}
+
+.banner-carousel .arrow {
+    position: relative;
+    top: 0;
+    left: 2rem;
+    cursor: pointer;
+    background-color: white;
+    border-radius: 100%;
+    padding: 1rem;
+    font-size: large;
+}
+
+.banner-carousel .arrow:hover {
+    background-color: #f44539;
+    color: white    ;
+}

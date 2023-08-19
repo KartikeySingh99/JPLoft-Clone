@@ -1,4 +1,4 @@
-import { useState, useRef,useEffect } from "react";
+import { useState, useRef, useEffect } from "react";
 import "./header.css";
 import MenuIcon from '@mui/icons-material/Menu';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
@@ -13,15 +13,15 @@ const Header = () => {
 
     useEffect(() => {
         const handleOutsideClick = (e) => {
-          if (menuRef.current && !menuRef.current.contains(e.target)) {
-            setMenuOpen(false);
-          }
+            if (menuRef.current && !menuRef.current.contains(e.target)) {
+                setMenuOpen(false);
+            }
         }
         document.addEventListener('click', handleOutsideClick)
         return (() => {
-          document.removeEventListener('click', handleOutsideClick)
+            document.removeEventListener('click', handleOutsideClick)
         })
-      }, [])
+    }, [])
     return (
         <>
             <header className='bg-white sticky top-0 left-0 z-50 w-full px-4 h-auto flex items-center'>
@@ -29,10 +29,147 @@ const Header = () => {
                     <img src={logo} width={90} alt="" />
                     <div className='hidden xl:flex items-center'>
                         <ul className='flex items-center'>
-                            <li className='menu cursor-pointer px-3 py-4 hover:bg-[#223039] hover:text-white ' onClick={() => setMenuOpen(!menuOpen)}>About Us <KeyboardArrowDownIcon /></li>
-                            <li className='menu cursor-pointer px-3 py-4 hover:bg-[#223039] hover:text-white ' onClick={() => setMenuOpen(!menuOpen)}>Our Service <KeyboardArrowDownIcon /></li>
-                            <li className='menu cursor-pointer px-3 py-4 hover:bg-[#223039] hover:text-white ' onClick={() => setMenuOpen(!menuOpen)}>Industries <KeyboardArrowDownIcon /></li>
-                            <li className='menu cursor-pointer px-3 py-4 hover:bg-[#223039] hover:text-white ' onClick={() => setMenuOpen(!menuOpen)}>Solutions <KeyboardArrowDownIcon /></li>
+                            <li className='group cursor-pointer px-3 py-4 hover:bg-[#223039] hover:text-white ' onClick={() => setMenuOpen(!menuOpen)}>
+                                <span>About Us</span> <span><KeyboardArrowDownIcon /></span>
+                                <div className="bg-[#223039] fixed top-[30%] left-[50%] z-[40] w-4/5 h-auto -translate-x-[50%] -translate-y-[50%] rounded-3xl hidden group-hover:grid grid-cols-2 gap-4 justify-items-center items-center p-4">
+                                    <div className="relative menu-card">
+                                        <img src={image} alt="" />
+                                        <div className="flex flex-col items-center justify-center absolute top-0 left-0 right-0 bottom-0 z-20 text-white">
+                                            <h1 className="text-3xl font-bold">About Us</h1>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam impedit vitae molestiae dignissimos, laboriosam repellendus ducimus quidem voluptatem consequatur culpa.</p>
+                                            <button className='rounded-sm bg-[#ed1f24] text-white font-medium text-lg py-1 px-2 mx-2 flex items-center justify-center'><span><img src={Animation} alt="" /></span>Inquire Now</button>
+                                        </div>
+                                    </div>
+                                    <div className="flex gap-4 flex-wrap items-center justify-center  text-white">
+                                        <div className="relative  w-44 flex items-center justify-center flex-grow h-36 overflow-hidden rounded-xl">
+                                            <h1 className="hover:cursor-pointer text-3xl menu-option">Company</h1>
+                                        </div>
+                                        <div className="relative  w-44 flex items-center justify-center flex-grow h-36 overflow-hidden rounded-xl">
+                                            <h1 className="hover:cursor-pointer text-3xl menu-option">Leadership</h1>
+                                        </div>
+                                        <div className="relative  w-44 flex items-center justify-center flex-grow h-36 overflow-hidden rounded-xl">
+                                            <h1 className="hover:cursor-pointer text-3xl menu-option">Our Clients</h1>
+                                        </div>
+                                        <div className="relative  w-44 flex items-center justify-center h-36 flex-grow overflow-hidden rounded-xl">
+                                            <h1 className="hover:cursor-pointer text-3xl menu-option">Client Reviews</h1>
+                                        </div>
+                                        <div className="relative  w-44 flex items-center justify-center h-36 flex-grow overflow-hidden rounded-xl">
+                                            <h1 className="hover:cursor-pointer text-3xl menu-option">Career</h1>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li className='menu cursor-pointer px-3 py-4 hover:bg-[#223039] hover:text-white group' onClick={() => setMenuOpen(!menuOpen)}>
+                                <span>Our Services</span> <span><KeyboardArrowDownIcon /></span>
+                                <div className="bg-[#223039] fixed top-[30%] left-[50%] z-[40] w-4/5 h-auto -translate-x-[50%] -translate-y-[50%] rounded-3xl hidden group-hover:grid grid-cols-2 gap-4 justify-items-center items-center p-4">
+                                    <div className="relative menu-card">
+                                        <img src={image} alt="" />
+                                        <div className="flex flex-col items-center justify-center absolute top-0 left-0 right-0 bottom-0 z-20 text-white">
+                                            <h1 className="text-3xl font-bold">Services</h1>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam impedit vitae molestiae dignissimos, laboriosam repellendus ducimus quidem voluptatem consequatur culpa.</p>
+                                            <button className='rounded-sm bg-[#ed1f24] text-white font-medium text-lg py-1 px-2 mx-2 flex items-center justify-center'><span><img src={Animation} alt="" /></span>Inquire Now</button>
+                                        </div>
+                                    </div>
+                                    <div className="flex gap-4 flex-wrap items-center justify-center  text-white">
+                                        <div className="relative  w-44 flex items-center justify-center flex-grow h-36 overflow-hidden rounded-xl">
+                                            <h1 className="hover:cursor-pointer text-3xl menu-option">Company</h1>
+                                        </div>
+                                        <div className="relative  w-44 flex items-center justify-center flex-grow h-36 overflow-hidden rounded-xl">
+                                            <h1 className="hover:cursor-pointer text-3xl menu-option">Leadership</h1>
+                                        </div>
+                                        <div className="relative  w-44 flex items-center justify-center flex-grow h-36 overflow-hidden rounded-xl">
+                                            <h1 className="hover:cursor-pointer text-3xl menu-option">Our Clients</h1>
+                                        </div>
+                                        <div className="relative  w-44 flex items-center justify-center h-36 flex-grow overflow-hidden rounded-xl">
+                                            <h1 className="hover:cursor-pointer text-3xl menu-option">Client Reviews</h1>
+                                        </div>
+                                        <div className="relative  w-44 flex items-center justify-center h-36 flex-grow overflow-hidden rounded-xl">
+                                            <h1 className="hover:cursor-pointer text-3xl menu-option">Career</h1>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li className='menu cursor-pointer px-3 py-4 hover:bg-[#223039] hover:text-white group' onClick={() => setMenuOpen(!menuOpen)}>
+                                <span>Industries</span> <span><KeyboardArrowDownIcon /></span>
+                                <div className=" bg-[#223039] fixed top-[40%] left-[50%] z-[40] w-4/5 h-auto -translate-x-[50%] -translate-y-[50%] rounded-3xl hidden group-hover:grid grid-cols-2 gap-4 justify-items-center items-start p-4">
+                                    <div className="relative menu-card">
+                                        <img src={image} className="rounded-xl w-full object-cover" alt="" />
+                                        <div className="flex flex-col items-center justify-center absolute top-0 left-0 right-0 bottom-0 z-20 text-white">
+                                            <h1 className="text-3xl font-bold">Industries</h1>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam impedit vitae molestiae dignissimos, laboriosam repellendus ducimus quidem voluptatem consequatur culpa.</p>
+                                            <button className='rounded-sm bg-[#ed1f24] text-white font-medium text-lg py-1 px-2 mx-2 flex items-center justify-center'><span><img src={Animation} alt="" /></span>Inquire Now</button>
+                                        </div>
+                                    </div>
+                                    <div className="grid grid-cols-4 gap-4 items-center justify-center  text-white">
+                                        <div className="relative  w-32 flex items-center justify-center flex-grow h-36 overflow-hidden rounded-xl">
+                                            <h1 className="hover:cursor-pointer text-xl menu-option">Company</h1>
+                                        </div>
+                                        <div className="relative  w-32 flex items-center justify-center flex-grow h-36 overflow-hidden rounded-xl">
+                                            <h1 className="hover:cursor-pointer text-xl menu-option">Company</h1>
+                                        </div>
+                                        <div className="relative  w-32 flex items-center justify-center flex-grow h-36 overflow-hidden rounded-xl">
+                                            <h1 className="hover:cursor-pointer text-xl menu-option">Leadership</h1>
+                                        </div>
+                                        <div className="relative  w-32 flex items-center justify-center flex-grow h-36 overflow-hidden rounded-xl">
+                                            <h1 className="hover:cursor-pointer text-xl menu-option">Leadership</h1>
+                                        </div>
+                                        <div className="relative  w-32 flex items-center justify-center flex-grow h-36 overflow-hidden rounded-xl">
+                                            <h1 className="hover:cursor-pointer text-xl menu-option">Our Clients</h1>
+                                        </div>
+                                        <div className="relative  w-32 flex items-center justify-center flex-grow h-36 overflow-hidden rounded-xl">
+                                            <h1 className="hover:cursor-pointer text-xl menu-option">Our Clients</h1>
+                                        </div>
+                                        <div className="relative  w-32 flex items-center justify-center h-36 flex-grow overflow-hidden rounded-xl">
+                                            <h1 className="hover:cursor-pointer text-xl menu-option">Client Reviews</h1>
+                                        </div>
+                                        <div className="relative  w-32 flex items-center justify-center h-36 flex-grow overflow-hidden rounded-xl">
+                                            <h1 className="hover:cursor-pointer text-xl menu-option">Client Reviews</h1>
+                                        </div>
+                                        <div className="relative  w-32 flex items-center justify-center h-36 flex-grow overflow-hidden rounded-xl">
+                                            <h1 className="hover:cursor-pointer text-xl menu-option">Career</h1>
+                                        </div>
+                                        <div className="relative  w-32 flex items-center justify-center h-36 flex-grow overflow-hidden rounded-xl">
+                                            <h1 className="hover:cursor-pointer text-xl menu-option">Career</h1>
+                                        </div>
+                                        <div className="relative  w-32 flex items-center justify-center h-36 flex-grow overflow-hidden rounded-xl">
+                                            <h1 className="hover:cursor-pointer text-xl menu-option">Career</h1>
+                                        </div>
+                                        <div className="relative  w-32 flex items-center justify-center h-36 flex-grow overflow-hidden rounded-xl">
+                                            <h1 className="hover:cursor-pointer text-xl menu-option">Career</h1>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li className='menu cursor-pointer px-3 py-4 hover:bg-[#223039] hover:text-white group' onClick={() => setMenuOpen(!menuOpen)}>
+                                <span>Solutions</span><span><KeyboardArrowDownIcon /></span>
+                                <div className="bg-[#223039] fixed top-[40%] left-[50%] z-[40] w-4/5 h-auto -translate-x-[50%] -translate-y-[50%] rounded-3xl hidden group-hover:grid grid-cols-2 gap-4 justify-items-center items-center p-4">
+                                    <div className="relative menu-card">
+                                        <img src={image} alt="" />
+                                        <div className="flex flex-col items-center justify-center absolute top-0 left-0 right-0 bottom-0 z-20 text-white">
+                                            <h1 className="text-3xl font-bold">About Us</h1>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam impedit vitae molestiae dignissimos, laboriosam repellendus ducimus quidem voluptatem consequatur culpa.</p>
+                                            <button className='rounded-sm bg-[#ed1f24] text-white font-medium text-lg py-1 px-2 mx-2 flex items-center justify-center'><span><img src={Animation} alt="" /></span>Inquire Now</button>
+                                        </div>
+                                    </div>
+                                    <div className="flex gap-4 flex-wrap items-center justify-center  text-white">
+                                        <div className="relative  w-44 flex items-center justify-center flex-grow h-36 overflow-hidden rounded-xl">
+                                            <h1 className="hover:cursor-pointer text-3xl menu-option">Company</h1>
+                                        </div>
+                                        <div className="relative  w-44 flex items-center justify-center flex-grow h-36 overflow-hidden rounded-xl">
+                                            <h1 className="hover:cursor-pointer text-3xl menu-option">Leadership</h1>
+                                        </div>
+                                        <div className="relative  w-44 flex items-center justify-center flex-grow h-36 overflow-hidden rounded-xl">
+                                            <h1 className="hover:cursor-pointer text-3xl menu-option">Our Clients</h1>
+                                        </div>
+                                        <div className="relative  w-44 flex items-center justify-center h-36 flex-grow overflow-hidden rounded-xl">
+                                            <h1 className="hover:cursor-pointer text-3xl menu-option">Client Reviews</h1>
+                                        </div>
+                                        <div className="relative  w-44 flex items-center justify-center h-36 flex-grow overflow-hidden rounded-xl">
+                                            <h1 className="hover:cursor-pointer text-3xl menu-option">Career</h1>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
                             <li className='menu cursor-pointer px-3 py-4 hover:bg-[#223039] hover:text-white ' >Case Study</li>
                             <li className='menu cursor-pointer px-3 py-4 hover:bg-[#223039] hover:text-white ' >Portfolio</li>
                             <li className='menu cursor-pointer px-3 py-4 hover:bg-[#223039] hover:text-white ' >Blog</li>
@@ -60,36 +197,7 @@ const Header = () => {
                     </ul>
                 </div>
             }
-            {
-                menuOpen &&
-                <div className="dropdown-menu rounded-3xl grid grid-cols-2 gap-4 justify-items-center items-center p-4">
-                    <div className="relative menu-card">
-                        <img src={image} alt="" />
-                        <div className="flex flex-col items-center justify-center absolute top-0 left-0 right-0 bottom-0 z-20 text-white">
-                            <h1 className="text-3xl font-bold">About Us</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam impedit vitae molestiae dignissimos, laboriosam repellendus ducimus quidem voluptatem consequatur culpa.</p>
-                            <button className='rounded-sm bg-[#ed1f24] text-white font-medium text-lg py-1 px-2 mx-2 flex items-center justify-center'><span><img src={Animation} alt="" /></span>Inquire Now</button>
-                        </div>
-                    </div>
-                    <div className="flex gap-4 flex-wrap items-center justify-center  text-white">
-                        <div className="relative  w-44 flex items-center justify-center flex-grow h-36 overflow-hidden rounded-xl">
-                            <h1 className="hover:cursor-pointer text-3xl menu-option">Company</h1>
-                        </div>
-                        <div className="relative  w-44 flex items-center justify-center flex-grow h-36 overflow-hidden rounded-xl">
-                            <h1 className="hover:cursor-pointer text-3xl menu-option">Leadership</h1>
-                        </div>
-                        <div className="relative  w-44 flex items-center justify-center flex-grow h-36 overflow-hidden rounded-xl">
-                            <h1 className="hover:cursor-pointer text-3xl menu-option">Our Clients</h1>
-                        </div>
-                        <div className="relative  w-44 flex items-center justify-center h-36 flex-grow overflow-hidden rounded-xl">
-                            <h1 className="hover:cursor-pointer text-3xl menu-option">Client Reviews</h1>
-                        </div>
-                        <div className="relative  w-44 flex items-center justify-center h-36 flex-grow overflow-hidden rounded-xl">
-                            <h1 className="hover:cursor-pointer text-3xl menu-option">Career</h1>
-                        </div>
-                    </div>
-                </div>
-            }
+
         </>
     )
 }

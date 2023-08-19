@@ -8,17 +8,6 @@
     z-index: 50;
 }
 
-.dropdown-menu {
-    background-color: #223039;
-    position: fixed;
-    top: 30%;
-    left: 50%;
-    z-index: 40;
-    transform: translate(-50%, -50%);
-    width: 80%;
-    height: 50%;
-}
-
 
 .menu-card::before {
     content: "";
@@ -37,6 +26,13 @@
     align-items: center;
     justify-content: center;
     overflow: hidden;
+    background-color: #304451;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
 }
 
 .menu-option::before{
