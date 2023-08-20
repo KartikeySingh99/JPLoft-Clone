@@ -109,16 +109,16 @@ const Home = () => {
     return (
         <>
             <section className='flex items-center justify-center hero-container'>
-                <div className='hidden md:block lg:w-[100vw] lg:h-[90vh] -z-10'>
+                <div className='hidden md:block md:w-[100vw] md:h-[90vh] -z-10'>
                     <video className='object-cover w-full h-full aspect-ratio-video' loop autoPlay muted >
                         <source src={video} type="video/mp4" />
                     </video>
                 </div>
                 <div className='py-6 px-4 bg-[#23232f] md:bg-transparent static md:absolute flex flex-col items-center justify-between'>
                     <div className=' flex items-center flex-col'>
-                        <h1 className='md:py-6 text-2xl lg:text-[3.5rem] font-bold text-white'>Top-Rated <span className='text-sky-500'>Web</span> & <span className='text-green-500'>App</span> </h1>
-                        <h1 className='md:py-6 text-2xl lg:text-[3.5rem] font-bold text-white'>Development Company</h1>
-                        <p className='text-sm lg:text-[1.5rem] font-medium text-white py-12 md:leading-8 w-[80%]'>We love developing masterpiece mobile applications and websites boosted by our digital marketing services. We love contributing to our clients’ success even more.</p>
+                        <h1 className='md:py-6 text-2xl md:text-[3.5rem] font-bold text-white'>Top-Rated <span className='text-sky-500'>Web</span> & <span className='text-green-500'>App</span> </h1>
+                        <h1 className='md:py-6 text-2xl md:text-[3.5rem] font-bold text-white'>Development Company</h1>
+                        <p className='text-sm md:text-[1.5rem] font-medium text-white py-12 md:leading-8 w-[80%]'>We love developing masterpiece mobile applications and websites boosted by our digital marketing services. We love contributing to our clients’ success even more.</p>
                         <button className='rounded-md bg-[#ed1f24] text-white flex items-center px-2 py-2'><span><img src={Animation} alt="" /></span><span>Get A Free Consultation</span></button>
                     </div>
                 </div>

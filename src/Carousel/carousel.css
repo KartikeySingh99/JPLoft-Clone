@@ -49,23 +49,26 @@
 }
 
 .banner-carousel {
-    border: 2px solid red;
     display: flex;
     /* margin: 1vmax auto; */
     align-items: center;
+    /* flex-direction: column; */
     /* width: 90vw; */
     flex-wrap: wrap;
     max-width: 100%;
 }
 
 .banner-carousel .arrow {
-    position: relative;
+    margin-top: 24px;
+    /* position: relative;
     top: 0;
-    left: 2rem;
+    left: 2rem; */
+    display: inline-block;
     cursor: pointer;
     background-color: white;
     border-radius: 100%;
     padding: 1rem;
+    width: 50px;
     font-size: large;
 }
 

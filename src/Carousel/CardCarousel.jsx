@@ -1,4 +1,5 @@
 import Carousel from "react-multi-carousel";
+  import 'react-multi-carousel/lib/styles.css';
 import "./carousel.css";
 import banner1 from "../assets/port-2.webp"
 import banner2 from "../assets/port-3.webp"
@@ -30,23 +31,19 @@ const CardCarousel = () => {
   return (
     <>
       <Carousel className="hidden md:block overflow-hidden gap-4"
-        PrevtIcon
-        NextIcon
         additionalTransfrom={0}
         containerClass="banner-carousel"
-        arrows
+        arrows={true}
         draggable
         focusOnSelect={false}
         slidesToSlide={1}
         removeArrowOnDeviceType={["mobile"]}
         autoPlay
-        infinite
+        infinite={true}
         itemClass=""
-        // minimumTouchDrag={80}
-        renderArrowsWhenDisabled={false}
-        renderButtonGroupOutside={false}
+        renderArrowsWhenDisabled={true}
+        renderButtonGroupOutside={true}
         renderDotsOutside={false}
-        rewind
         responsive={responsive}
         customLeftArrow={<h1 className="arrow">{`<`}</h1>}
         customRightArrow={<h1 className="arrow">{`>`}</h1>}
@@ -55,8 +52,8 @@ const CardCarousel = () => {
           <div className="w-[520px]">
             <img src={banner1} alt="" />
           </div>
-          <div className="text-left">
-            <h1 className="py-4">Heading</h1>
+          <div className="bg-white text-left">
+            <h1 className="py-4 font-bold">Heading</h1>
             <p className="text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa laborum minima repellendus animi soluta quis laudantium aliquid tempora fuga aperiam.</p>
           </div>
         </div>
@@ -64,8 +61,8 @@ const CardCarousel = () => {
           <div className="w-[520px]">
             <img src={banner2} alt="" />
           </div>
-          <div className="text-left">
-            <h1 className="py-4">Heading</h1>
+          <div className="bg-white text-left">
+            <h1 className="py-4 font-bold">Heading</h1>
             <p className="text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa laborum minima repellendus animi soluta quis laudantium aliquid tempora fuga aperiam.</p>
           </div>
         </div>
@@ -73,8 +70,8 @@ const CardCarousel = () => {
           <div className="w-[520px]">
             <img src={banner3} alt="" />
           </div>
-          <div className="text-left">
-            <h1 className="py-4">Heading</h1>
+          <div className="bg-white text-left">
+            <h1 className="py-4 font-bold">Heading</h1>
             <p className="text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa laborum minima repellendus animi soluta quis laudantium aliquid tempora fuga aperiam.</p>
           </div>
         </div>
@@ -82,8 +79,8 @@ const CardCarousel = () => {
           <div className="w-[520px]">
             <img src={banner4} alt="" />
           </div>
-          <div className="text-left">
-            <h1 className="py-4">Heading</h1>
+          <div className="bg-white text-left">
+            <h1 className="py-4 font-bold">Heading</h1>
             <p className="text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa laborum minima repellendus animi soluta quis laudantium aliquid tempora fuga aperiam.</p>
           </div>
         </div>
