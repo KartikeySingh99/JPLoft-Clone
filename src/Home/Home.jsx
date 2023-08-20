@@ -167,7 +167,7 @@ const Home = () => {
                     </div>
                 </div>
             </section>
-            <section className=' px-12 py-12'>
+            <section className='bg-white px-12 py-12'>
                 <Blogs />
             </section>
             <section className="bg-[#101023] px-8 md:px-12 py-16">

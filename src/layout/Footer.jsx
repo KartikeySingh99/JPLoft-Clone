@@ -10,7 +10,7 @@ import logo from "../assets/logo.svg";
 const Footer = () => {
     return (
         <>
-            <footer className="flex flex-col md:flex-row items-center justify-stretch w-full py-16">
+            <footer className="bg-white flex flex-col md:flex-row items-center justify-stretch w-full py-16">
                 <div className="md:self-start md:w-[20%] p-6">
                     <img src={logo} className="w-32 " alt="" />
                 </div>
