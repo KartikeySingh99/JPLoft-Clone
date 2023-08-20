@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="60.046" viewBox="0 0 120 60.046">
+  <g id="logo" transform="translate(-423 -108)">
+    <g id="Group_17652" data-name="Group 17652" transform="translate(423 108)">
+      <path id="Path_138616" data-name="Path 138616" d="M36.28,43.5a15.79,15.79,0,0,1-1.325,5.347s12.329.561,16-5.347l-2.7-2.8a3.134,3.134,0,0,0-2.5,0,14.235,14.235,0,0,1-3.106,1.728,27.951,27.951,0,0,1-4.941,1.045,3.257,3.257,0,0,1-1.426.025Z" transform="translate(-4.636 -1.588)"/>
+      <path id="Path_138617" data-name="Path 138617" d="M29.525,16.042A2.931,2.931,0,0,0,27.691,13.5H24.024s-.2,25.971-.052,33.473S32.378,59.58,32.378,59.58c1.171-2.245.662-6.314.662-6.314-2.14-1.681-3.514-7.538-3.514-7.538V16.042Z" transform="translate(-9.947 -13.494)"/>
+      <path id="Path_138618" data-name="Path 138618" d="M41.413,20.854H45.03V53.085S43.2,76,15.022,68.619l.357-2.6s.509-1.93,2.038-1.681,10.187,1.324,13.246-.356,7.693-4.48,8.763-9.827l.255-31.317S39.934,20.854,41.413,20.854Z" transform="translate(-15.022 -10.038)" fill="#ed1f24"/>
+      <ellipse id="Ellipse_2122" data-name="Ellipse 2122" cx="2.802" cy="2.648" rx="2.802" ry="2.648" transform="translate(24.402 0)" fill="#ed1f24"/>
+      <path id="Path_138619" data-name="Path 138619" d="M35.867,20.979H47.42s2.038.193,2.14,2.965,0,21.286,0,21.286H35.867V39.884h7.684V26.6H35.867V20.981Z" transform="translate(-4.116 -9.706)" fill="#ed1f24"/>
+    </g>
+    <text id="JPLoft" transform="translate(475 140.768)" font-size="23" font-family="LucidaBright, Lucida Bright"><tspan x="0" y="0">JPLoft</tspan></text>
+    <text id="A_true_business_partner" data-name="A true business partner" transform="translate(475.226 153.708)" font-size="6.5" font-family="ArialMT, Arial"><tspan x="0" y="0">A true business partner</tspan></text>
+  </g>
+</svg>
